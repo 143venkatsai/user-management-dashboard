@@ -1,0 +1,71 @@
+.users-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+.user-item{
+    border: 1px solid #323f4b;
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.user-item .name, .email, .department{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;    
+}
+
+.user-item span{
+    font-weight: bold;
+}
+
+.edit-btn{
+    background-color: #54B4D3;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    outline: none;
+    margin-right: 10px;
+}
+
+.delete-btn{
+    background-color: #DC4C64;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+@media screen and (max-width:765px){
+    .user-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .user-item{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+}
